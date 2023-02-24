@@ -1,6 +1,6 @@
 import React from "react";
 import Links from "./Links"
-
+import user from "../data/user"
 function About(props) {
 
   return (
@@ -8,9 +8,7 @@ function About(props) {
       <h2>About Me</h2>
       <p>{props.bio}</p> 
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      <p>{props.links}</p>
-        console.log(props.github)
-      <Links github={props.github} linkedin={props.linkedin} />
+      <Links github={user.links.github} linkedin={user.links.linkedin} />
     </div>
   );
 }
