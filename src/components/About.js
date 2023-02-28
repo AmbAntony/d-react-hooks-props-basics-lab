@@ -3,6 +3,11 @@ import Links from "./Links"
 import user from "../data/user"
 function About(props) {
 
+  if (!props.bio || props.bio === '') 
+  {
+    return null;
+  }
+
   return (
     <div id="about">
       <h2>About Me</h2>
